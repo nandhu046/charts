@@ -40,16 +40,19 @@ class CowinDashboard extends Component {
     return (
       <>
         <div className="chart-container">
+          <h1 className="sub-heading">Vaccination Coverage</h1>
           <VaccinationCoverage
             vaccinationOfWeek={vaccinationData.last7DaysVaccination}
           />
         </div>
         <div className="chart-container">
+          <h1 className="sub-heading">Vaccination by gender</h1>
           <VaccinationByGender
             vaccinationByGenderData={vaccinationData.vaccinationByGender}
           />
         </div>
         <div className="chart-container">
+          <h1 className="sub-heading">Vaccination by Age</h1>
           <VaccinationByAge
             vaccinationByAgeData={vaccinationData.vaccinationByAge}
           />
